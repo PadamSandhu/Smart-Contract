@@ -1,0 +1,110 @@
+#jumbotron{
+  background-image: url("./images/topheader.jpg");
+  background-position: center;
+  color:whitesmoke; 
+}
+
+#Centeral{
+margin: 0 auto;
+text-align: center;
+}
+
+#tnames{
+  padding: 2em;
+  padding-left: 4em;
+  padding-right: 4em;  
+}
+
+#tnamesaddmore{
+  padding-left: 4em;
+}
+
+
+ul {
+  list-style-type: none;
+}
+
+.listed-group{
+  padding-top:2em;
+  padding-left: 4em;
+  text-align: left;
+}
+
+.costbutton{
+  margin: 2em;
+  margin-bottom: 3em;
+}
+
+#successgreen{
+  background: green
+}
+
+#utilityobligation{
+  padding: 2em;
+}
+
+#hidden{
+display: none !important;
+}
+
+#topbuttonright{
+  
+  margin-left: 75vw;
+
+}
+
+#tophomebuttonright{
+  margin-left: 5vw;
+}
+
+#Step1Tean1{
+  width: 100%;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+#Step3Address1{
+  width: 100%;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+#Step4Lease1{
+  width: 100%;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+#Step5Rent1{
+  width: 100%;
+  padding-left: 12%;
+  padding-right: 0%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+#Step6Keyset1{
+  width: 100%;
+  padding-left: 12%;
+  padding-right: 0%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+#paddinginputbox{
+  padding: 5%;
+}
+
+#Step7Cost1{
+  width: 100%;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
