@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-// import {BrowserRouter as Router, Route, Switch, Link} from 'react-router-dom';
 
 
 
@@ -39,7 +38,7 @@ class Step8Parking extends Component{
                     
                     </div>
         
-                    <button href="#" className="btn btn-primary">Next</button>
+                    <button  className="btn btn-primary">Next</button>
         
                   </form>
                 </div>

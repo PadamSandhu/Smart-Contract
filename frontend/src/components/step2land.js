@@ -32,7 +32,7 @@ class Step2Land extends Component{
                       </div>
                     </div>        
                   </form>
-                  <button onClick={this.props.submitNameland} href="#" className="btn btn-primary">Next</button>
+                  <button onClick={this.props.submitNameland} className="btn btn-primary">Next</button>
 
                 </div>
                 </div>

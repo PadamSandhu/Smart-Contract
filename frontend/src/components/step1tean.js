@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-// import {BrowserRouter as Router, Route, Switch, Link} from 'react-router-dom';
 
 
 
@@ -33,7 +32,7 @@ class Step1Tean extends Component{
                       </div>
                     </div>        
                   </form>
-                  <button onClick={this.props.submitNameten} href="#" className="btn btn-primary">Next</button>
+                  <button onClick={this.props.submitNameten} className="btn btn-primary">Next</button>
                 </div>
                 </div>
         

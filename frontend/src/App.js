@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-// import {BrowserRouter as Router, Route, Switch, Link} from 'react-router-dom';
 import numberStringRepresentation from 'number-string-representation'
 import axios from 'axios'
 
@@ -10,7 +9,6 @@ import axios from 'axios'
 
 
 import Header from './components/Header.js'
-// import Footer from './components/Footer.js'
 import Step1Tean from './components/step1tean.js'
 import Step2Land from './components/step2land.js'
 import Step3Address from './components/step3address.js'
@@ -216,7 +214,6 @@ leasestartdate(event,year,month,date,time){
     let newutility = utility
     let newuser  = user
     let perutility = percentutilityyy;
-    // console.log(percentutilityyy)
 
     if(newuser==='Landlord'){
     this.setState({
