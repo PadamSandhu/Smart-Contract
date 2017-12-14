@@ -1,4 +1,4 @@
 
 
-Read readme file in frontend and backend !!
+Read readme file in frontend and backend folders !!
 
