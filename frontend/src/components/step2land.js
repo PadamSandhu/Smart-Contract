@@ -30,11 +30,10 @@ class Step2Land extends Component{
                       <div id='tnamesaddmore'>
                       <button  href="#" className="btn btn-primary">Add</button>
                       </div>
-                    </div>
-        
-                    <button onClick={this.props.submitNameland} href="#" className="btn btn-primary">Next</button>
-        
+                    </div>        
                   </form>
+                  <button onClick={this.props.submitNameland} href="#" className="btn btn-primary">Next</button>
+
                 </div>
                 </div>
         

@@ -124,9 +124,8 @@ submitNameten(input){
   this.setState({
     tenants:this.state.secondname,
     step: newstep,
-  }).then(this.setState({
     secondname:[]
-  }))
+  })
 
 }
 

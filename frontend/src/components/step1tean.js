@@ -31,11 +31,9 @@ class Step1Tean extends Component{
                       <div id='tnamesaddmore'>
                       <button  href="#" className="btn btn-primary">Add</button>
                       </div>
-                    </div>
-        
-                    <button onClick={this.props.submitNameten} href="#" className="btn btn-primary">Next</button>
-        
+                    </div>        
                   </form>
+                  <button onClick={this.props.submitNameten} href="#" className="btn btn-primary">Next</button>
                 </div>
                 </div>
         
