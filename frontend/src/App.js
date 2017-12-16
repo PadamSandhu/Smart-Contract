@@ -38,7 +38,7 @@ class App extends Component {
                 {firstname:'Landlord FirstName2',lastname:'Landlord LastName2'}],
 
     address:{
-      primaryaddress:'123 Main Street',
+      primaryaddress:'',
       unit:"",
       city:'',
       state:'',
@@ -52,17 +52,17 @@ class App extends Component {
       lengthyear:''
     },
     rentamount:{
-      amount:"$1600",
-      amountword:"one thousand six hundred",
-      term: "monthly"
+      amount:"",
+      amountword:"",
+      term: ""
     },
     keyset:{
-      numkeysets:"2",
-      depositkey:"$200"
+      numkeysets:"",
+      depositkey:""
     },
       otherquestions:[],
-      personresforuti:"Nobody",
-      personutipercent:"100",
+      personresforuti:"",
+      personutipercent:"",
       costcal:[],
       residencepur:"",
       landbuttonclass:'',
@@ -352,8 +352,6 @@ leasestartdate(event,year,month,date,time){
         leasesigndate:newstartdate,
         step:newstep        
       })
-
-    
     }
   
     componentDidUpdate(prevProps, prevState) {
@@ -364,7 +362,6 @@ leasestartdate(event,year,month,date,time){
 
   
   submitAllData(){
-    // event.preventDefault();
 
     let NewUser = {
     TenantsNames:this.state.tenants,
@@ -383,12 +380,10 @@ leasestartdate(event,year,month,date,time){
     PurposeofResidence:this.state.residencepur,
     SigningDateofLease:this.state.leasesigndate  
     }
-    // console.log(NewUser)
 
     axios.post('http://localhost:8080/newitem',
       NewUser
     ).then(res=>{
-      // console.log(res)
       let data =res.data
       window.open('http://localhost:8080/')
     })
