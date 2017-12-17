@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+// import {BrowserRouter as Router, Route, Switch, Link} from 'react-router-dom';
 import numberStringRepresentation from 'number-string-representation'
 import axios from 'axios'
 
@@ -9,6 +10,7 @@ import axios from 'axios'
 
 
 import Header from './components/Header.js'
+// import Footer from './components/Footer.js'
 import Step1Tean from './components/step1tean.js'
 import Step2Land from './components/step2land.js'
 import Step3Address from './components/step3address.js'
@@ -38,7 +40,7 @@ class App extends Component {
                 {firstname:'Landlord FirstName2',lastname:'Landlord LastName2'}],
 
     address:{
-      primaryaddress:'',
+      primaryaddress:'123 Main Street',
       unit:"",
       city:'',
       state:'',
@@ -52,17 +54,17 @@ class App extends Component {
       lengthyear:''
     },
     rentamount:{
-      amount:"",
-      amountword:"",
-      term: ""
+      amount:"$1600",
+      amountword:"one thousand six hundred",
+      term: "monthly"
     },
     keyset:{
-      numkeysets:"",
-      depositkey:""
+      numkeysets:"2",
+      depositkey:"$200"
     },
       otherquestions:[],
-      personresforuti:"",
-      personutipercent:"",
+      personresforuti:"Nobody",
+      personutipercent:"100",
       costcal:[],
       residencepur:"",
       landbuttonclass:'',
@@ -122,8 +124,9 @@ submitNameten(input){
   this.setState({
     tenants:this.state.secondname,
     step: newstep,
+  }).then(this.setState({
     secondname:[]
-  })
+  }))
 
 }
 
@@ -214,6 +217,7 @@ leasestartdate(event,year,month,date,time){
     let newutility = utility
     let newuser  = user
     let perutility = percentutilityyy;
+    // console.log(percentutilityyy)
 
     if(newuser==='Landlord'){
     this.setState({
@@ -352,6 +356,8 @@ leasestartdate(event,year,month,date,time){
         leasesigndate:newstartdate,
         step:newstep        
       })
+
+    
     }
   
     componentDidUpdate(prevProps, prevState) {
@@ -362,6 +368,7 @@ leasestartdate(event,year,month,date,time){
 
   
   submitAllData(){
+    // event.preventDefault();
 
     let NewUser = {
     TenantsNames:this.state.tenants,
@@ -380,10 +387,12 @@ leasestartdate(event,year,month,date,time){
     PurposeofResidence:this.state.residencepur,
     SigningDateofLease:this.state.leasesigndate  
     }
+    // console.log(NewUser)
 
     axios.post('http://localhost:8080/newitem',
       NewUser
     ).then(res=>{
+      // console.log(res)
       let data =res.data
       window.open('http://localhost:8080/')
     })
