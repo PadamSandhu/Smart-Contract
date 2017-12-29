@@ -18,7 +18,7 @@ class Header extends Component{
 
               <li id="topbuttonright" className="nav-item active">
               
-                <button className="btn btn-outline-success my-2 my-sm-0" type="submit"><a target="_blank"  href="http://localhost:3000/">New Project</a></button>
+                <button className="btn btn-outline-success my-2 my-sm-0" type="submit"><a   href="http://localhost:3000/">New Project</a></button>
 
               </li>
             

@@ -20,7 +20,7 @@ class Step11Signingcontract extends Component{
                         
                       <div className="col">
                       <label htmlFor="inputState">Signing date of lease</label>
-                        <input onChange ref={ref=>this.date=ref} type="date" id="date" className="form-control" placeholder="Start date of lease" />
+                        <input  ref={ref=>this.date=ref} type="date" id="date" className="form-control" placeholder="Start date of lease" />
                       </div>
                     
                     </div>

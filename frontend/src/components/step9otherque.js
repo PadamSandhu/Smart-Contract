@@ -18,8 +18,8 @@ class Step9Otherquestion extends Component{
           </ul>
           
           <form>
-          <button onClick={(event)=>{this.props.petssmokrepairsubmit(event,this.props.questionid,"allowed")}} type="button" id={this.props.landbuttonclass} class=" costbutton btn btn-primary btn-lg">Yes</button>
-          <button onClick={(event)=>{this.props.petssmokrepairsubmit(event,this.props.questionid,"not allowed")}} type="button" id={this.props.tenantbuttonclass}  class="costbutton btn btn-primary btn-lg">No</button>
+          <button onClick={(event)=>{this.props.petssmokrepairsubmit(event,this.props.questionid,"allowed")}} type="button" id={this.props.landbuttonclass} className=" costbutton btn btn-primary btn-lg">Yes</button>
+          <button onClick={(event)=>{this.props.petssmokrepairsubmit(event,this.props.questionid,"not allowed")}} type="button" id={this.props.tenantbuttonclass}  className="costbutton btn btn-primary btn-lg">No</button>
 
           </form>
           <button onClick={(event)=>{this.props.submitpetnext(event,this.props.questionid)}} type="submit" className="btn btn-primary">Next</button>

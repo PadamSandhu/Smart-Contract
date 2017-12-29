@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
 // import {BrowserRouter as Router, Route, Switch, Link} from 'react-router-dom';
 import numberStringRepresentation from 'number-string-representation'
@@ -119,7 +119,7 @@ tenantsAdd(event,first,last){
 
 
 submitNameten(input){
-  this.tenantsAdd
+  // this.tenantsAdd
    let newstep = this.state.step +1;
   this.setState({
     tenants:this.state.secondname,
@@ -360,7 +360,7 @@ leasestartdate(event,year,month,date,time){
     }
   
     componentDidUpdate(prevProps, prevState) {
-      if (this.state.step == 11) {
+      if (this.state.step === 11) {
         this.submitAllData()
       }
     }
@@ -392,10 +392,9 @@ leasestartdate(event,year,month,date,time){
       NewUser
     ).then(res=>{
       // console.log(res)
-      let data =res.data
+      // let data =res.data
       window.open('http://localhost:8080/')
     })
-
   }  
 
 
@@ -422,12 +421,12 @@ leasestartdate(event,year,month,date,time){
 
   let otherquestion = [{Question:"Are tendants allowed to have PET",id:"pet"},
                        {Question:"Are tendants allowed to smoke on Property",id:"smoking"},
-                       {Question:"Is landlord responsible for repaire of appliances after the first month ",id:"repairs"}]
+                       {Question:"Is landlord responsible for repair of appliances after the first month ",id:"repairs"}]
 
 
 
       let newidno =    costquestions[this.state.secondname.length]
-      let   utilityshow = <h4> Who is responsible for {newidno.Question} </h4>
+      let   utilityshow = <div> Who is responsible for {newidno.Question} </div>
 
       let answercost  = <h5>{this.state.personresforuti} is responsible to pay {this.state.personutipercent}% for {newidno.Question} </h5>
       
@@ -435,7 +434,7 @@ leasestartdate(event,year,month,date,time){
 
       let questlen = otherquestion[this.state.tempstorage.length]
 
-      let questionother = <h4> {questlen.Question}  </h4>
+      let questionother = <div> {questlen.Question}  </div>
 
   let step = this.state.step
 

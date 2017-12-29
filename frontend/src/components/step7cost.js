@@ -18,8 +18,8 @@ class Step7Cost extends Component{
           </ul>
           
           <form>
-          <button onClick={(event)=>{this.props.submitcost(event,this.props.utility,"Landlord",this.props.personutipercent)}} type="button" id={this.props.landbuttonclass}  class=" costbutton btn btn-primary btn-lg">LandLord</button>
-          <button onClick={(event)=>{this.props.submitcost(event,this.props.utility,"Tenant",this.props.personutipercent)}} type="button" id={this.props.tenantbuttonclass}  class="costbutton btn btn-primary btn-lg">Tenant</button>
+          <button onClick={(event)=>{this.props.submitcost(event,this.props.utility,"Landlord",this.props.personutipercent)}} type="button" id={this.props.landbuttonclass}  className=" costbutton btn btn-primary btn-lg">LandLord</button>
+          <button onClick={(event)=>{this.props.submitcost(event,this.props.utility,"Tenant",this.props.personutipercent)}} type="button" id={this.props.tenantbuttonclass}  className="costbutton btn btn-primary btn-lg">Tenant</button>
           
           <div>
           <label htmlFor="inputPercent">Percent of Utility you are responsible for</label>
