@@ -29,7 +29,7 @@ class Header extends Component{
         <div id="jumbotron" className="jumbotron jumbotron-fluid">
         <div className="container">
           <h1 className="display-3">Rental Agreement</h1>
-          <p className="lead">This application will auto create a rental agrement, by answering quick questions</p>
+          <p className="lead">This application will auto create a rental agreement, by answering quick questions</p>
         </div>
       </div>
     </div>

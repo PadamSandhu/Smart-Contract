@@ -364,7 +364,6 @@ leasestartdate(event,year,month,date,time){
 
   
   submitAllData(){
-    // event.preventDefault();
 
     let NewUser = {
     TenantsNames:this.state.tenants,
@@ -383,13 +382,11 @@ leasestartdate(event,year,month,date,time){
     PurposeofResidence:this.state.residencepur,
     SigningDateofLease:this.state.leasesigndate  
     }
-    // console.log(NewUser)
 
     axios.post('http://localhost:8080/newitem',
       NewUser
     ).then(res=>{
-      // console.log(res)
-      // let data =res.data
+    
       window.open('http://localhost:8080/')
     })
   }  
