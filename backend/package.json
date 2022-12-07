@@ -11,7 +11,7 @@
   "dependencies": {
     "cors": "^2.8.4",
     "ejs": "^2.5.7",
-    "express": "^4.16.2",
+    "express": "^4.17.3",
     "html-pdf": "^2.2.0",
     "request": "^2.83.0"
   },
